@@ -16,8 +16,6 @@ app.add_middleware(
 def home():
     return {"message": "AI First CRM Backend Running"}
 
-
-
 @app.post("/log_chat_interaction")
 async def log_chat(data: dict):
     message = data.get("message")
